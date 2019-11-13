@@ -14,19 +14,9 @@ npm i -g bs-cra
 ```
 
 ## 使用
-在命令行执行 `cra` 命令：
-```
-您的项目要叫什么名字?
-tmp-app-name
-使用什么语言？JavaScript(1) 或者 TypeScript(2)?
-2
-是否安装 antd 组件库? yes/no
-y
-是否安装 antd-mobile 组件库? yes/no
-y
-是否需要开启 sass? yes/no
-y
-```
+在命令行执行 `cra` 命令，交互如下：
+
+![image.png](https://i.loli.net/2019/11/13/L24kPVh6vsyF3I7.png)
 
 ## 其他
 本命令开发时使用的各主要依赖项版本如下：
