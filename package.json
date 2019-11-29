@@ -1,6 +1,6 @@
 {
   "name": "bs-cra",
-  "version": "1.0.6",
+  "version": "2.0.0",
   "description": "create-react-app 的二次定制脚手架",
   "repository": "https://github.com/fyz1994/cra",
   "main": "cra.sh",
