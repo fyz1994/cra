@@ -3,9 +3,9 @@
   "version": "1.0.6",
   "description": "create-react-app 的二次定制脚手架",
   "repository": "https://github.com/fyz1994/cra",
-  "main": "cra.sh",
+  "main": "cra.js",
   "bin": {
-    "cra": "./cra.sh"
+    "cra": "cra.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,5 +17,13 @@
     "antd-mobile"
   ],
   "author": "yizhen.fan",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "customize-cra": "^0.9.1",
+    "inquirer": "^7.0.0",
+    "ora": "^4.0.3",
+    "shelljs": "^0.8.3",
+    "yargs": "^15.0.2"
+  }
 }
