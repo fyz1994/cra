@@ -1,5 +1,5 @@
 #!/bin/bash
-# 如果遇到权限问题，请先执行 chmod 777 ./antd.sh 或者 chmod +x ./antd.sh
+# 如果遇到权限问题，请先执行 chmod 777 ./cra.sh 或者 chmod +x ./cra.sh
 
 echo '欢迎使用 cra 来初始化您的前端项目👏'
 echo ''
