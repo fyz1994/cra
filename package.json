@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "node-cli，一个命令就能为您准备好开箱即用的业务开发 APP",
   "repository": "https://github.com/fyz1994/cra-docs",
+  "homepage": "https://fyz1994.github.io/cra-docs/",
   "main": "cra.js",
   "bin": {
     "oh": "cra.js"
