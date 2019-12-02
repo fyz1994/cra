@@ -4,11 +4,24 @@ const shell = require("shelljs")
 const inquirer = require('inquirer')
 const ora = require('ora')
 const chalk = require('chalk')
+// const program = require('commander')
 
+// const packageJson = require('./package.json') // 获取 package.json 中的版本号信息
+
+// program
+//   .version(packageJson.version)
+//   .description(packageJson.description)
+//   .option('-h, --help', '输出如何使用的提示信息')
+//   .option('-h, --help', '输出如何使用的提示信息')
+
+// program.on('--help', function () {
+//   console.log("您可以点击 https://fyz1994.github.io/cra-docs/ 查看使用文档")
+// });
 /**
- *  TODO: 失败重试
- *  TODO: 网络请求初始化（应该做成子模块）
- *  TODO: 初始化一份 README.md 
+ * TODO: 失败重试
+ * TODO: 网络请求初始化（应该做成子模块）
+ * TODO: 初始化一份 README.md 
+ * TODO: check 用户提供的名字是否符合 npm 的命名标准：validate-npm-package-name
  */
 let questions = [
   {
@@ -36,7 +49,7 @@ let questions = [
   },
 ]
 
-shell.echo('欢迎使用 cra 来初始化您的前端项目👏\n')
+shell.echo('欢迎使用 oh-react 来初始化您的前端项目👏\n')
 
 inquirer
   .prompt(questions)
@@ -50,7 +63,7 @@ inquirer
 
     // 初始化项目
     installPackages(answers, pkgManager, errCallback).then(_ => {
-      shell.echo(`\n成功为您创建了 ${answers.name} 项目于 ${shell.pwd()}!`)
+      shell.echo(`\n成功为您创建了 ${chalk.green(answers.name)} 项目于 ${shell.pwd()}!`)
       shell.echo('\n现在，您可以执行以下命令启动您的程序：')
       shell.echo(`\t${pkgManager === 'yarn' ? 'yarn start' : 'npm start'}\n\nHappy hacking!`)
     })
